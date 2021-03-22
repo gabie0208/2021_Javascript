@@ -1,0 +1,35 @@
+```html
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <script language="javascript">
+        function moOnClick(){
+            var innerText = document.getElementsByClassName("mo");
+            console.log(innerText);
+            innerText[0].innerHTML = "모처럼이니"
+        }
+        function  gakOnClick(){
+            var innerText = document.getElementsByClassName("gak");
+
+            innerText[0].innerHTML= "각잡고 열심히 하면"
+        }
+        function coOnClick(){
+            var innerText = document.getElementsByClassName("co");
+
+            innerText[0].innerHTML= "코린이 탈출이다"
+        }
+    </script>
+</head>
+<body>
+    <div class="layout">
+        <div class='mo'>모</div>
+        <div class='gak'>각</div>
+        <div class='co'>코</div>
+       <button onclick=moOnClick()>모</button>
+       <button onclick=gakOnClick()>각</button>
+       <button onclick=coOnClick()>코</button>
+    </div>
+</body>
+</html>
+```
