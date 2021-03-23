@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="0323" content="width=device-width, initial-scale = 2.0">
+    <title>print the object data</title>
+    <script language="javascript">
+        function printType(value) {
+            console.log("Type of <" + value+"> is "+typeof(value));
+        }
+        var num = 1,
+            str = "smile",
+            bo = true,
+            obj = { name: "gabie"}
+    </script>
+</head>
+<body>
+    <div>
+        <button onclick=printType(num) style="background-color: aquamarine;">1</button>
+        <button onclick=printType(str) style="background-color: greenyellow;">hello</button>
+        <button onclick=printType(bo) style="background-color: skyblue;">true</button>
+        <button onclick=printType(obj) style="background-color: yellow;">{name:"gabie"}</button>
+        <button onclick=printType() style="background-color: cyan;">null</button>
+    </div> 
+</body>
+</html>
