@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head> 
+    <meta charset="UTF-8">
+    <title>전광판</title>
+    <style>
+        button {
+            background-color:whitesmoke;
+            color:rgb(51, 15, 137);
+            border-color: rgb(151, 184, 246);
+            margin: 0.1rem;
+            block-size: 2.5rem;
+            font-weight: bold;
+            font-size: 2rem;
+        }
+        body {
+            background-image: url(./flower.jpeg);
+            background-size: 40rem;
+            color:rgb(4, 59, 186);
+            font-style: oblique;
+            position:relative;
+            margin-top: 45%;
+            margin-left: 35%;
+            font-weight: bold;
+            font-size: 3rem;
+        }
+    </style>
+</head>
+<body>
+    <div id = "container">
+    <p id="type"></p>
+    <div class="layout">
+    <button onclick="banner()">click here!</button>
+    </div>
+    <script>
+        var i = 0;
+        var name = "[ gabie ]";
+        function banner(){
+            const show = document.getElementById('type');
+            if(i < name.length) {
+                show.innerHTML += name.charAt(i);
+                i++;         
+            }
+        }           
+    </script>
+</body>
+</html>
