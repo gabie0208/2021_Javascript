@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <script language="javascript">
+        var nickName = "모각코매니저";
+        var count = 0;
+        var color = ['red','blue','green','yellow','orange','purple']
+        function showName(){
+            if(count >= nickName.length){
+                return;
+            }
+            document.getElementsByClassName('name')[0].innerHTML += nickName[count];
+            document.getElementsByClassName('name')[0].style.color = color[count++];
+        }
+    </script>
+</head>
+<body>
+    <button onclick=showName()>전광판 버튼</button>
+    <h1 class='name'></h1>
+     
+</body>
+</html>
