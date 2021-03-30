@@ -1,0 +1,62 @@
+//영화 소개하기
+<!DOCTYPE html>
+<html lang="ko">
+<head> 
+    <meta charset="UTF-8">
+    <title>My Favorite Movies</title>
+    <style>
+        button {
+            font-weight: bold;
+            font-size: 1rem;
+            background-color: pink;
+
+        }
+        .title {
+            font-size : 2rem;
+            margin-bottom: 1%;
+        }
+        p {
+            height: 50px;   
+            font-size: 30px;
+            font-weight: bold;
+            color: black;
+        }
+       </style>
+       </head>
+<body>
+    <div id = "container">
+     <div class="layout">
+        <h3>click the button!</h3>
+        <button onclick="movie(0)">내 머릿속의 지우개</button>
+        <button onclick="movie(1)">About Time</button>
+        <button onclick="movie(2)">그 시절, 우리가 좋아했던 소녀</button>
+    </div>
+    
+    <p id="title"></p>
+    <li id="rel_year"></li>
+    <li id="genre"></li>
+    <li id="country"></li>
+    <li id="cast"></li>
+    <li id="rating"></li>
+    
+    <script language="javascript">
+        let title = ['내 머릿속의 지우개','해운대','그 시절, 우리가 좋아했던 소녀'];
+        let rel_year = ['2004','2009','2011'];
+        let genre = ['멜로/로맨스','재난, 드라마','멜로/로맨스'];
+        let country = ['한국', '한국', '대만'];
+        let cast = ['손예진, 정우성', '설경구, 하지원, 이민기', '가진동, 천옌시']
+        let rating = ['12세 이상 관람가', '12세 이상 관람가', '15세 이상 관람가']
+
+        function movie(i) {             
+            document.querySelector("#title").innerHTML = title[i];
+            document.querySelector("#rel_year").innerHTML = rel_year[i];
+            document.querySelector("#genre").innerHTML = genre[i];
+            document.querySelector("#country").innerHTML = country[i];
+            document.querySelector("#cast").innerHTML = cast[i];
+            document.querySelector("#rating").innerHTML = rating[i];
+       }
+        
+    </script>
+
+</body>
+</html>
