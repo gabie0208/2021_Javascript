@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang='ko'>
+<head>
+    <meta charset="utf-8">
+    <title>전화번호 출력하기</title>
+    <style>
+        button {
+            background-color: greenyellow;
+            border-radius: 5px;
+            width: 5rem;
+            text-align: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-top: 50px;
+        }
+        body {
+            text-align: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h2 id="name"><br></h2>
+    <h2 id="phone_number"><br></h2>
+    <button id="call">click</button>
+    <script>
+        function print(){
+            document.getElementById("name").innerText = "gabie";
+            document.getElementById("phone_number").innerText = "010-xxxx-xxxx";
+        }
+       
+        function onCall(){
+            setTimeout(print, 2000);
+        }
+
+        var callClick = document.getElementById("call").addEventListener('click', onCall);
+    </script>
+</body>
+</html>
