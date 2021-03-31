@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <link rel='stylesheet' href='style.css'>
+    <script language="javascript">
+        function call(){
+            setTimeout(function(){
+                document.getElementsByClassName('call')[0].style.display = 'none';
+                document.getElementsByClassName('name')[0].style.display = 'flex';
+                document.getElementsByClassName('number')[0].style.display = 'flex';
+            },2000);
+        }
+    </script>
+</head>
+<body>
+   <div class="call" onclick=call()>전화걸기</div>
+   <div class='name'>모각코</div>
+   <div class='number'>010-xxxx-xxxx</div>
+</body>
+</html>
