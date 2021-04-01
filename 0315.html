@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <link rel='stylesheet' href='style.css'>
+    <script language="javascript">
+        function check_text() {
+            var value = document.getElementById("console").value;
+            console.log(value);
+
+            if(value == "고양이"){
+                document.getElementsByClassName('cat_says')[0].innerHTML = '고양이지롱~';
+            }
+            else{
+                console.log(value);
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="layout">
+        <div class="cat_says">
+            냐앙~
+        </div>
+        <div class="cat">
+        </div>
+        <div class="input_layout">
+            <input type="text" id="console" class="input_style">    
+        </div>
+        <div class="button" onclick=check_text()>
+            시키기
+        </div>       
+    </div>
+</body>
+</html>
